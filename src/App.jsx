@@ -1,11 +1,17 @@
+import "./App.css";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Dashboard from "./pages/Dashboard.jsx";
 
-
-const App = () => {
+function App() {
     return (
-        <div>
-            <h1 className="text-4xl text-center"> JUDUL </h1>
-        </div>
+        <>
+            <BrowserRouter>
+                <Routes>
+                    <Route path="/" element={<Dashboard />} />
+                </Routes>
+            </BrowserRouter>
+        </>
     );
-};
+}
 
 export default App;
