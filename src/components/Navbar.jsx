@@ -10,6 +10,7 @@ const Navbar = () => {
 
     const [isActive, setIsActive] = useState(false);
     const [scrollPosition, setScrollPosition] = useState(0);
+    const [isDropdownActive, setIsDropdownActive] = useState(false);
 
     const toggleHamburger = () => {
         setIsActive(!isActive);
@@ -48,9 +49,13 @@ const Navbar = () => {
         }
     };
 
+    const handleDropdownHover = (status) => {
+        setIsDropdownActive(status);
+    };
+
     return (
         <div
-            className={`sticky top-0 left-0 py-5 text-white w-full flex items-center
+            className={`fixed top-0 left-0 lg:py-3 py-5 text-white w-full flex items-center
         ${
             isActive || scrollPosition > 0
                 ? " backdrop-filter backdrop-blur-[3px] shadow-gray-600 shadow-sm"
@@ -96,9 +101,19 @@ const Navbar = () => {
                             id="navMenu"
                             className={`${
                                 isActive
-                                    ? "block fixed py-6 bg-[#333A73] shadow-xl rounded-bl-3xl rounded-tr-3xl max-w-[250px] w-full left-1 top-20 bg-opacity-90   backdrop-filter backdrop-blur-[3px] lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none"
+                                    ? "block fixed bg-[#333A73] shadow-xl rounded-bl-3xl rounded-tr-3xl max-w-[250px] w-full left-1 top-20 bg-opacity-90   backdrop-filter backdrop-blur-[3px] lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none"
                                     : "hidden sm:hidden md:hidden lg:block "
                             }`}
+                            style={{
+                                paddingTop:
+                                    isActive || isDropdownActive
+                                        ? "1rem"
+                                        : "1rem",
+                                paddingBottom:
+                                    isActive || isDropdownActive
+                                        ? "1rem"
+                                        : "1rem",
+                            }}
                         >
                             <ul className="block lg:flex lg:-ml-40">
                                 <li className="group">
@@ -110,16 +125,60 @@ const Navbar = () => {
                                         Home
                                     </Link>
                                 </li>
-                                <li className="group">
+                                <li
+                                    className="group relative"
+                                    onMouseEnter={() =>
+                                        handleDropdownHover(true)
+                                    }
+                                    onMouseLeave={() =>
+                                        handleDropdownHover(false)
+                                    }
+                                >
                                     <Link
                                         to="/detail"
                                         className="text-xl font-poppins font-medium text-white py-2 mx-8 inline-flex hover:border-blue-500 hover:border-b-2"
                                     >
                                         Profil
+                                        <SlArrowDown className="w-[10px] ml-[9px] mt-2 text-white" />
                                     </Link>
-                                    <SlArrowDown className="w-[12px] ml-[90px] -mt-6 text-white" />
+                                    <ul
+                                        className={`absolute ml-0 w-full py-1 text-center bg-[#333A73] shadow-lg rounded-lg ${
+                                            isDropdownActive
+                                                ? "block"
+                                                : "hidden"
+                                        }`}
+                                    >
+                                        <li>
+                                            <Link
+                                                to="/"
+                                                className="block px-4 py-2 lg:ml-0 -ml-1 text-sm font-poppins font-medium text-white hover:bg-blue-500 hover:text-white"
+                                            >
+                                                Profil RT
+                                            </Link>
+                                        </li>
+                                        <li>
+                                            <Link
+                                                to="/"
+                                                className="block px-4 py-2 text-sm font-poppins font-medium text-white hover:bg-blue-500 hover:text-white"
+                                            >
+                                                Visi & Misi
+                                            </Link>
+                                        </li>
+                                        <li>
+                                            <Link
+                                                to="/"
+                                                className="block px-4 py-2 text-sm font-poppins font-medium text-white hover:bg-blue-500 hover:text-white"
+                                            >
+                                                Struktur Organisasi
+                                            </Link>
+                                        </li>
+                                    </ul>
                                 </li>
-                                <li className="group">
+                                <li
+                                    className={`group ${
+                                        isDropdownActive ? "lg:mt-0 mt-28" : ""
+                                    }`}
+                                >
                                     <div className="relative">
                                         <Link
                                             onClick={scrollToAbout}
@@ -130,7 +189,11 @@ const Navbar = () => {
                                         </Link>
                                     </div>
                                 </li>
-                                <li className="group">
+                                <li
+                                    className={`group ${
+                                        isDropdownActive ? "lg:mt-0 " : ""
+                                    }`}
+                                >
                                     <Link
                                         onClick={scrollToContact}
                                         to="/landing#Contact"
@@ -139,7 +202,11 @@ const Navbar = () => {
                                         Berita
                                     </Link>
                                 </li>
-                                <li className="group">
+                                <li
+                                    className={`group ${
+                                        isDropdownActive ? "lg:mt-0 " : ""
+                                    }`}
+                                >
                                     <Link
                                         onClick={scrollToContact}
                                         to="/landing#Contact"
