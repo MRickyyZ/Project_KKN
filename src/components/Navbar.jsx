@@ -115,12 +115,12 @@ const Navbar = () => {
                                         : "1rem",
                             }}
                         >
-                            <ul className="block lg:flex lg:-ml-40">
+                            <ul className="block lg:flex lg:-ml-40 ">
                                 <li className="group">
                                     <Link
                                         onClick={scrollToHome}
                                         to="/landing#Home"
-                                        className="text-xl 2xl:ml-64 xl:ml-28 font-poppins font-medium text-white py-2 mx-8 inline-flex   hover:border-blue-500 hover:border-b-2"
+                                        className="text-xl 2xl:ml-64 xl:ml-[6.5rem] font-poppins font-medium text-white py-2 mx-8 inline-flex   hover:border-blue-500 hover:border-b-2"
                                     >
                                         Home
                                     </Link>
