@@ -119,7 +119,7 @@ const Navbar = () => {
                                 <li className="group">
                                     <Link
                                         onClick={scrollToHome}
-                                        to="/landing#Home"
+                                        to="/"
                                         className="text-xl 2xl:ml-64 xl:ml-[6.5rem] font-poppins font-medium text-white py-2 mx-8 inline-flex   hover:border-blue-500 hover:border-b-2"
                                     >
                                         Home
@@ -135,7 +135,7 @@ const Navbar = () => {
                                     }
                                 >
                                     <Link
-                                        to="/detail"
+                                        to="/"
                                         className="text-xl font-poppins font-medium text-white py-2 mx-8 inline-flex hover:border-blue-500 hover:border-b-2"
                                     >
                                         Profil
@@ -182,7 +182,7 @@ const Navbar = () => {
                                     <div className="relative">
                                         <Link
                                             onClick={scrollToAbout}
-                                            to="/landing#About"
+                                            to="/"
                                             className="text-xl font-poppins font-medium text-white py-2 mx-8 inline-flex hover:border-blue-500 hover:border-b-2"
                                         >
                                             Lapak Kost
@@ -196,7 +196,7 @@ const Navbar = () => {
                                 >
                                     <Link
                                         onClick={scrollToContact}
-                                        to="/landing#Contact"
+                                        to="/"
                                         className="text-xl font-poppins font-medium text-white py-2 mx-8 inline-flex hover:border-blue-500 hover:border-b-2"
                                     >
                                         Berita
@@ -209,7 +209,7 @@ const Navbar = () => {
                                 >
                                     <Link
                                         onClick={scrollToContact}
-                                        to="/landing#Contact"
+                                        to="/map"
                                         className="text-xl font-poppins font-medium text-white py-2 mx-8 inline-flex hover:border-blue-500 hover:border-b-2"
                                     >
                                         Peta
