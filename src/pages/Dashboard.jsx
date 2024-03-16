@@ -143,8 +143,8 @@ xl:text-lg xl:w-[50rem]"
                     <div className="w-[14rem] h-44  z-50 bg-slate-300 mt-10 ml-4 rounded-xl relative outline outline-1 outline-black lg:w-[18.5rem] xl:w-[24rem] xl:h-56 2xl:w-[28rem] ">
                         <div className="w-[10rem] h-16 rounded-br-xl rounded-bl-xl bottom-0 absolute  bg-white md:w-[13.3rem] lg:w-[18.3rem]  xl:w-[23.8rem] 2xl:w-[27.2rem]"></div>
                     </div>
-                    <div className="w-[14rem] h-44 z-50 bg-slate-300 mt-10 ml-4 mr-4 rounded-xl relative outline outline-1 outline-black lg:w-[18.5rem] xl:w-[24rem] xl:h-56 2xl:w-[28rem] 2xl:mr-8">
-                        <div className="w-[10rem] h-16 rounded-br-xl rounded-bl-xl bottom-0 absolute  bg-white md:w-[13.3rem] lg:w-[18.3rem]  xl:w-[23.8rem] 2xl:w-[27.2rem]"></div>
+                    <div className="w-[14rem] h-44 z-50 bg-slate-300 mt-10 ml-4 mr-4 rounded-xl relative outline outline-1 outline-black lg:w-[18.5rem] xl:w-[24rem] xl:h-56 2xl:w-[27.8rem] 2xl:mr-8">
+                        <div className="w-[10rem] h-16 rounded-br-xl rounded-bl-xl bottom-0 absolute  bg-white md:w-[13.3rem] lg:w-[18.3rem]  xl:w-[23.8rem] 2xl:w-[27rem]"></div>
                     </div>
                 </div>
                 <div className="px-48 -mt-5 md:px-64 lg:px-[375px] xl:px-[31rem] 2xl:px-[39rem]">
