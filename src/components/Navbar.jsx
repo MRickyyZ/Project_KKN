@@ -166,7 +166,7 @@ const Navbar = () => {
                                         </li>
                                         <li>
                                             <Link
-                                                to="/"
+                                                to="/struktur"
                                                 className="block px-4 py-2 text-sm font-poppins font-medium text-white hover:bg-blue-500 hover:text-white"
                                             >
                                                 Struktur Organisasi
