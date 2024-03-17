@@ -9,7 +9,7 @@ const StructurePage = () => {
             <HeroSection />
             <div className="container mx-auto -mt-40 lg:mt-32 px-6 h-[55rem] ">
                 <div className="bg-white rounded-lg h-[42rem] relative shadow-lg shadow-[#696969] lg:-mt-72 lg:h-[39rem] md:h-[40rem] xl:h-[45rem] 2xl:h-[50rem] outline outline-1 ">
-                    <div className="absolute bg-[#FBA834] w-80 h-10 rounded-md text-center text-3xl font-kulim font-semibold translate-x-1/2 right-1/2 mt-5  2xl:w-[30rem] 2xl:h-14 2xl:text-5xl">
+                    <div className="absolute bg-[#FBA834] w-80 h-10 rounded-md text-center text-3xl font-kulim font-semibold translate-x-1/2 right-1/2 mt-5  2xl:w-[30rem] 2xl:h-14 2xl:text-5xl ">
                         Struktur Organisasi
                     </div>
                     <div className="w-[24rem] xl:w-[30rem] py-20 xl:py-28 mx-auto ">

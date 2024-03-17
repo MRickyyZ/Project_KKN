@@ -17,7 +17,7 @@ function Dashboard() {
                         </h1>
                     </div>
                     <div className="px-8 lg:*:ml-64 lg:w-1/2">
-                        <p className="font-semibold text-lg -mt-36 lg:mt-4 xl:text-2xl xl:w-96">
+                        <p className="font-semibold text-lg -mt-36 lg:w-[20rem] lg:mt-4 xl:text-2xl xl:w-96">
                             Assalamualaikum WR. WB <br /> Salam Sejahtera untuk
                             kita semua
                         </p>

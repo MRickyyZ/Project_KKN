@@ -52,7 +52,6 @@ const Navbar = () => {
     const handleDropdownHover = (status) => {
         setIsDropdownActive(status);
     };
-
     return (
         <div
             className={`fixed top-0 left-0 lg:py-3 py-5 text-white w-full flex items-center
@@ -159,9 +158,9 @@ const Navbar = () => {
                                         <li>
                                             <Link
                                                 to="/"
-                                                className="block px-4 py-2 text-sm font-poppins font-medium text-white hover:bg-blue-500 hover:text-white"
+                                                className="block px-4 py-2 lg:ml-0 -ml-1 text-sm font-poppins font-medium text-white hover:bg-blue-500 hover:text-white"
                                             >
-                                                Visi & Misi
+                                                Album Galeri
                                             </Link>
                                         </li>
                                         <li>
@@ -182,7 +181,7 @@ const Navbar = () => {
                                     <div className="relative">
                                         <Link
                                             onClick={scrollToAbout}
-                                            to="/"
+                                            to="/lapak"
                                             className="text-xl font-poppins font-medium text-white py-2 mx-8 inline-flex hover:border-blue-500 hover:border-b-2"
                                         >
                                             Lapak Kost
