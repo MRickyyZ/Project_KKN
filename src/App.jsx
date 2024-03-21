@@ -12,7 +12,7 @@ function App() {
                 <Routes>
                     <Route path="/" element={<Dashboard />} />
                     <Route path="/map" element={<LocationPage />} />
-                    <Route path="/struktur" element={<StructurePage />} />
+                    <Route path="/struktur" element={<StructurePage />}/>
                     <Route path="/lapak" element={<LapakPage />} />
                 </Routes>
             </BrowserRouter>

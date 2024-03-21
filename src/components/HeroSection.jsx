@@ -3,7 +3,7 @@ import imageHeroSection2 from "../assets/imageHeroSection2.svg";
 
 const HeroSection = () => {
     return (
-        <main>
+        <main >
             <div className="flex relative justify-center mx-auto">
                 <img
                     src={imageHeroSection}
