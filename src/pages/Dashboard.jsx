@@ -3,13 +3,12 @@ import HeroSection from "../components/HeroSection";
 import MoreButton from "../components/MoreButton";
 import imgKost from "../assets/imgKost.svg";
 import Footer from "../components/Footer";
-import Up from "../components/Up";
+
 
 function Dashboard() {
     return (
         <>
-            <Up className="z-50" />
-            <main className="relative z-10 h-[160rem] bg-[#D9D9D9]">
+            <main className="relative -z-30 h-[160rem] bg-[#D9D9D9]">
                 <Navbar />
                 <HeroSection />
                 <div className="container mx-auto -mt-40 lg:mt-32 px-6 z-40">
