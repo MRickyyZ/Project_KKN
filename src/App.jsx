@@ -4,6 +4,7 @@ import Dashboard from "./pages/Dashboard.jsx";
 import LocationPage from "./pages/LocationPage.jsx";
 import StructurePage from "./pages/StructurePage.jsx";
 import LapakPage from "./pages/LapakPage.jsx";
+import ProfilPage from "./pages/ProfilPage.jsx";
 
 function App() {
     return (
@@ -14,6 +15,7 @@ function App() {
                     <Route path="/map" element={<LocationPage />} />
                     <Route path="/struktur" element={<StructurePage />}/>
                     <Route path="/lapak" element={<LapakPage />} />
+                    <Route path="/profil" element={<ProfilPage />} />
                 </Routes>
             </BrowserRouter>
         </>

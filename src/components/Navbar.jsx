@@ -149,7 +149,7 @@ const Navbar = () => {
                                     >
                                         <li>
                                             <Link
-                                                to="/"
+                                                to="/profil"
                                                 className="block px-4 py-2 lg:ml-0 -ml-1 text-sm font-poppins font-medium text-white hover:bg-blue-500 hover:text-white"
                                             >
                                                 Profil RT

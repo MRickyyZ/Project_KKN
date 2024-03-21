@@ -8,7 +8,7 @@ import Footer from "../components/Footer";
 function Dashboard() {
     return (
         <>
-            <main className="relative -z-30 h-[160rem] bg-[#D9D9D9]">
+            <main className="relative  h-[160rem] bg-[#D9D9D9]">
                 <Navbar />
                 <HeroSection />
                 <div className="container mx-auto -mt-40 lg:mt-32 px-6 z-40">
@@ -197,8 +197,7 @@ xl:text-lg xl:w-[50rem]"
                                 <div className="w-[10rem] h-16 rounded-br-xl rounded-bl-xl bottom-0 absolute  bg-[#333A73] md:w-[13.3rem] lg:w-[18.3rem]  xl:w-[23.8rem] 2xl:w-[27rem]">
                                     <p className="text-sm font-kulim font-semibold mx-auto text-center text-white xl:mt-2 xl:text-base">
                                         Pemberdayaan Lingkungan Pembuatan
-                                        Hidroponik dan Kompos Pembuatan
-                                        Hidroponik dan Kompos
+                                        Hidroponik dan Kompos 
                                     </p>
                                 </div>
                             </a>
@@ -208,7 +207,7 @@ xl:text-lg xl:w-[50rem]"
                         <MoreButton />
                     </div>
                 </div>
-                <Footer className="z-40" />
+                <Footer className="" />
             </main>
         </>
     );
